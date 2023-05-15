@@ -273,7 +273,9 @@ strong img
 }
 .hero .status .text
 {
-    font-size:21px; text-shadow:0 0 2px gray ;color:#838383
+    font-size:21px; 
+    text-shadow:0 0 2px gray ;
+    color:#838383;
 }
 
 section
