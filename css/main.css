@@ -1,0 +1,647 @@
+/* Main Pallete */
+:root
+{
+    --primary-color:#396C03;
+    --secondary-color:#FF8B00;
+    --black-basic:#3F3F3F;
+    --paragragh-color:#676767;
+
+}
+
+.dropdown
+{
+    position:relative;
+}
+
+.dropcontent
+{
+    background-color: white;
+    position:absolute;
+    display: none;
+    top:101%;
+    box-shadow: 0px 0px 5px  black  ;
+}
+.dropcontent a
+{
+    color:black;
+    padding: 12px 24px;
+}
+
+.dropdown:hover .dropcontent
+{
+    display:block;
+}
+
+
+/* Begin Basic Classes */
+h1
+{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 84.5px;
+}
+h1
+{
+    font-family: 'Merienda', cursive;
+    color: var(--primary-color);
+}
+.hero h5
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    line-height: 140%;
+    color: #676767;
+}
+
+
+p
+{
+    color:#676767;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+}
+.primary-button
+{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 32px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    gap:2px;
+    align-items: center;
+    justify-content: center;
+}
+.primary-button:hover
+{
+    background-color: #4c8f04;
+}
+
+.secondary-button
+{
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 32px;
+    padding: 8px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.secondary-button a
+{
+    text-decoration: none;
+}
+.secondary-button:hover
+{
+    background-color: #ffbb00;
+}
+
+/* End Basic Classes */
+
+
+/* Normalize */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+
+}
+a
+{
+    text-decoration: none;
+    color: var(--black-basic);
+}
+
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #396C0318;
+    min-height: 856px;
+}
+nav
+{
+    justify-self: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 48px;
+    color:var(--black-basic);
+    border-bottom: solid 1px #6b9142;
+    font-size: 28px;
+}
+nav li
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+
+}
+nav li:hover
+{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+nav >ul > li:last-child
+{
+    margin-left: 32px;
+}
+
+/* the logo */
+strong 
+{
+    font-family: 'Merienda', cursive;
+    color: var(--primary-color);
+    position: relative;
+
+}
+strong img
+{
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+/*End Logo */
+
+
+/* HERO */
+.hero
+{
+    margin:auto 0;
+    display:flex;
+    justify-content: space-around;
+    padding: 48px;
+    background-image: url('./images/tree.png') ,url('./images/tree.png');
+    background-repeat: no-repeat;
+    background-size: 25% 25%;
+    background-position: left top, 100% 10%;
+}
+.action-call
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+
+}
+
+.input
+{
+    width: 100%;
+    height: 48px;
+    border-radius: 32px;
+    display: flex;
+    border: solid 1px #3f4638;
+    background-color: white;
+}
+.input input
+{
+    border:none;
+    outline:none;
+    background-color: transparent;
+    padding-left: 16px;
+    font-size: 18px;
+    width: 100%;
+}
+.input a:first-child
+{
+    padding: 10px 10px;
+    margin: 10px;
+    align-self: center;
+    font-size: 16px;
+}
+.input a:last-child
+{
+    margin-left: auto;
+    padding:0 32px;
+}
+.hero img
+{
+    width: 520px;
+    height: 520px;
+}
+.hero .img
+{
+    margin-top: 20px ;
+    position: relative;
+}
+.hero .status
+{
+    padding:8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: var(--secondary-color);
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+section
+{
+    padding: 68px;
+}
+
+section.explore
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#FF8B0019 */
+}
+section.explore *
+{
+    max-width: 100%;
+} 
+section.explore img
+{
+    width: 500px;
+    height: 300px;
+}
+.explore a
+{
+    margin-top: 24px;
+    margin-left: 28px;
+    width: 180px;
+}
+.explore .relative
+{
+    position: relative;
+    /* width: 400px;
+    height: 300px; */
+}
+.explore a:nth-child(1)
+{
+    z-index: 1;
+}
+
+.explore a:nth-child(2)
+{
+    z-index: 2;
+}
+.absolute-center
+{
+    position: absolute;
+    top:50%;
+    left :50%;
+    transform: translate(-50%,-50%);
+}
+h2
+{
+    font-size: 50px;
+    font-family: 'Merienda', cursive;
+    color: var(--primary-color);
+}
+
+
+.grid-3
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:12px;
+}
+.edges .grid-3 h4
+{
+    font-family: sans-serif;
+    color: var(--black-basic);
+    font-size: 24px;
+    margin: 12px 0;
+}
+.edges p
+{
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+
+.relative-container
+{
+    position: relative;
+}
+.join img
+{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.join .bottom-center
+{
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    /* why did i have to put this? */
+    width: 100%;
+    /* */
+}
+.bottom-center *
+{
+    font-family: sans-serif;
+    color:white;
+}
+.bottom-center a
+{
+    padding :16px 36px;
+    font-size: 16px;
+}
+
+.edges .card:hover
+{
+    background-color: #396C030c;
+}
+
+
+section.pocket
+{
+    background-color:#FF8B0019;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.pocket div
+{
+
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+.pocket img
+{
+    max-width: 100%;
+}
+section.pocket h3
+{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+
+}
+section.pocket div div
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+section.pocket div div img
+{
+    width: 180px;
+}
+
+.grid2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:68px
+}
+footer
+{
+    background-color: #213f02;
+    color: white;
+}
+footer ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h4
+{
+    margin: 18px 0;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+}
+footer p, footer li a
+{
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    font-size:12px
+}
+footer  h5
+{
+    text-align: center;
+    margin-bottom: 18px ;
+}
+
+
+.contactus
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contactus form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap:18px;
+    width: 70%;
+}
+.contactus form input
+{
+    padding:8px 16px;
+}
+.contactus form input[type="submit"]
+{
+    align-self: center;
+    padding: 8px 32px;
+}
+textarea
+{
+    resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero h1
+    {
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    section
+    {
+        padding:16px;
+    }
+    nav 
+    {
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li:not(:last-child)
+    {
+        width: 100%;
+        text-align: center;
+        border: solid gray 1px;
+    }
+    nav ul li:last-child
+    {
+     margin :0;
+    }
+    .hero
+    {
+        /* height: 900px; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero h1
+    {
+        font-size: 36px;
+        text-align: center;
+    }
+    .hero .img
+    {
+        order: -1;
+    }
+    section.explore
+    {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    section.explore h2
+    {
+        text-align: center;
+    }
+    section.explore div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.explore div a
+    {
+        margin: 12px 0;   
+    }
+    section.explore div:last-child
+    {
+        order: -1;
+    }
+
+    
+    .grid-3
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .card
+    {
+        align-items: center;
+    }
+    section.pocket
+    {
+        grid-template-columns: 1fr;
+        /* height: 750px; */
+    }
+    section.pocket > div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    section.pocket img
+    {
+        width: 100%;
+        order:-1;
+    }
+
+
+
+    .grid2
+    {
+        grid-template-columns: 1fr;
+        gap:12px
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .hero img
+    {
+        width: 320px;
+        height: 320px;
+    }
+    section.explore
+    {
+        /* height:1000px; */
+    }
+
+    section.explore img
+    {
+        width: 420px;
+        height: 280px;
+    }
+    section.pocket div div img
+    {
+        width: 120px;
+    }
+    section.pocket h3
+    {
+        font-size: 28px;
+
+    }
+
+}
