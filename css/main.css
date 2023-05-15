@@ -271,6 +271,10 @@ strong img
     font-size: 42px;
     letter-spacing: 3px;
 }
+.hero .status .text
+{
+    font-size:21px; text-shadow:0 0 2px gray ;color:#838383
+}
 
 section
 {
@@ -384,6 +388,10 @@ h2
     /* why did i have to put this? */
     width: 100%;
     /* */
+}
+.join h3
+{
+    font-size: 40px;
 }
 .bottom-center *
 {
@@ -547,6 +555,11 @@ textarea
     {
         font-size: 36px;
         text-align: center;
+        line-height: 48px;
+    }
+    .hero h5
+    {
+        text-align: center;
     }
     .hero .img
     {
@@ -588,6 +601,12 @@ textarea
     {
         align-items: center;
     }
+
+
+    .join .bottom-center h3
+    {
+        font-size: 32px;
+    }
     section.pocket
     {
         grid-template-columns: 1fr;
@@ -619,10 +638,16 @@ textarea
 
 @media screen and (max-width: 576px) {
 
+    
     .hero img
     {
         width: 320px;
         height: 320px;
+    }
+
+    .hero .status .text
+    {
+        font-size: 16px;
     }
     section.explore
     {
@@ -634,6 +659,15 @@ textarea
         width: 420px;
         height: 280px;
     }
+    .join .bottom-center h3
+    {
+        font-size: 16px;
+    }
+    .join .bottom-center p
+    {
+        font-size: 12px
+    }
+    
     section.pocket div div img
     {
         width: 120px;
@@ -641,7 +675,6 @@ textarea
     section.pocket h3
     {
         font-size: 28px;
-
     }
 
 }
